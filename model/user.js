@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const reserve = require("./reserve.js");
 const passMongoose = require("passport-local-mongoose");
 
 const userSchema = new mongoose.Schema({

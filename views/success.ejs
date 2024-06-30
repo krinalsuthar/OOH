@@ -20,13 +20,13 @@
           required
         />
       </div>
-      <div class="mb-3 col-md-6" style="display: none">
-        <label for="id" class="form-label">id : </label>
+      <div class="mb-3 col-md-6">
+        <label for="idRef" class="form-label">id : </label>
         <input
           type="text"
           class="form-control"
-          id="id"
-          name="id"
+          id="idRef"
+          name="idRef"
           value="<%= id %>"
           required
         />
@@ -58,22 +58,22 @@
 
     <div class="row">
       <div class="mb-3 col-md-6">
-        <label for="checkOut" class="form-label">CheckOut Date : </label>
+        <label for="CheckIn" class="form-label">CheckIn Date : </label>
+        <input
+          type="date"
+          class="form-control"
+          id="CheckIn"
+          name="CheckIn"
+          required
+        />
+      </div>
+      <div class="mb-3 col-md-6">
+        <label for="checkOut" class="form-label">CheckOut : </label>
         <input
           type="date"
           class="form-control"
           id="checkOut"
           name="checkOut"
-          required
-        />
-      </div>
-      <div class="mb-3 col-md-6">
-        <label for="checkIn" class="form-label">CheckOut : </label>
-        <input
-          type="date"
-          class="form-control"
-          id="checkIn"
-          name="checkIn"
           required
         />
       </div>
