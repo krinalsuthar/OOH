@@ -10,6 +10,7 @@ const listingSchema = joi.object({
       location: joi.string().required(),
       country: joi.string().required(),
       category: joi.string().required(),
+      idRef: joi.string().required(),
     })
     .required(),
 });

@@ -1,5 +1,6 @@
 const listing = require("./model/listing");
 const comment = require("./model/comment");
+const reserve = require("./model/reserve.js");
 const schemaValidation = require("./schemaValidate.js");
 const commentValidation = require("./commentValidation.js");
 
