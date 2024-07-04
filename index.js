@@ -24,7 +24,8 @@ const user1 = require("./routes/user.js");
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-const dburl = process.env.ATLASDB_URL;
+// const dburl = process.env.ATLASDB_URL;
+const dburl = "mongodb://127.0.0.1:27017/OOH";
 
 main()
   .then(() => {
@@ -37,6 +38,10 @@ main()
 async function main() {
   await mongoose.connect(dburl);
 }
+
+// async function main() {
+//   await mongoose.connect(dburl);
+// }
 
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));

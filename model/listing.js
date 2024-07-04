@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const manyData = require("../init/data.js");
+// const manyData = require("../init/data.js");
 const comment = require("./comment.js");
 const { string } = require("joi");
 
